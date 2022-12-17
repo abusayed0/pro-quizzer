@@ -14,6 +14,7 @@ function App() {
       children:[
         {
           path:"/",
+          loader:async()=>fetch("https://openapi.programming-hero.com/api/quiz"),
           element:<Tropics></Tropics>
         },
         {
