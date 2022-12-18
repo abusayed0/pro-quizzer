@@ -17,7 +17,8 @@ const SingleQuestion = ({ questionData, index }) => {
             setWrong("");
             Swal.fire(
                 'Good job!',
-                'You answer is right .'
+                'Your answer is right!',
+                'success'
               )
         }
         else{
@@ -30,12 +31,15 @@ const SingleQuestion = ({ questionData, index }) => {
               })
         }
     }
+    const handleShowAnswer=()=>{
+        Swal.fire(correctAnswer)
+    }
     
     return (
         <div className=" bg-zinc-300 shadow-xl p-7 rounded-md">
             <div className="flex justify-between flex-col md:flex-row gap-2 md:gap-0">
                 <h3 className="text-2xl">{`${index + 1}.${question}`}</h3>
-                <FontAwesomeIcon className="text-4xl" icon={faEye} />
+                <FontAwesomeIcon className="text-4xl hover:cursor-pointer" icon={faEye} onClick={handleShowAnswer}/>
             </div>
             <div className="grid grid-cols-1 items-center gap-4 mt-6">
                 {
