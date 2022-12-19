@@ -2,7 +2,7 @@ import React from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { Bar, BarChart, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis } from 'recharts';
 
-const Statics = () => {
+const Statistics = () => {
     const data = useLoaderData().data;
     return (
         <div className="md:w-10/12 md:mx-auto mt-20 mb-10">
@@ -31,4 +31,4 @@ const Statics = () => {
     );
 };
 
-export default Statics;
+export default Statistics;

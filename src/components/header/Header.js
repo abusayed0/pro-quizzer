@@ -9,7 +9,7 @@ const Header = () => {
             <div className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-8">
                     <NavLink to={"/"} className={({isActive})=>isActive?"border-b border-primary":"hover:border-b border-info"}>Tropics</NavLink>
             
-                    <NavLink to={"/statics"} className={({isActive})=>isActive?"border-b border-primary":"hover:border-b border-info"}>Statics</NavLink>
+                    <NavLink to={"/statistics"} className={({isActive})=>isActive?"border-b border-primary":"hover:border-b border-info"}>Statistics</NavLink>
 
                     <NavLink to={"/blogs"} className={({isActive})=>isActive?"border-b border-primary":"hover:border-b border-info"}>Blogs</NavLink>
                     

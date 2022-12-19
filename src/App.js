@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
 import Blogs from './components/blogs/Blogs';
-import Statics from './components/statics/Statics';
+import Statistics from './components/statistics/Statistics';
 import Tropics from './components/tropics/Tropics';
 import Error from './components/errro/Error'
 import Main from './layouts/main/Main';
@@ -19,9 +19,9 @@ function App() {
           element: <Tropics></Tropics>
         },
         {
-          path: "/statics",
+          path: "/statistics",
           loader: async () => fetch("https://openapi.programming-hero.com/api/quiz"),
-          element: <Statics></Statics>
+          element: <Statistics></Statistics>
         },
         {
           path: "/blogs",

@@ -1,6 +1,6 @@
 # Pro Quizzer App
 
-### Live site - [https://pro-quizzer-001.netlify.app/](https://pro-quizzer-001.netlify.app/).
+### Live site - [https://pro-quizzer-001.netlify.app/](https://pro-quizzer-001.netlify.app/)
 
 ## Technology used
 * React Js.
@@ -11,6 +11,6 @@
 ## Features
 - Tropics page where you can see available quiz tropics and can go to answer quiz on a specific tropic.
 - A dynamic page for every tropic quiz.
-- Statics page where you can see a tropic name vs question on this tropic bar chart.
+- Statistics page where you can see a tropic name vs question on this tropic bar chart.
 - A blogs page.
 
