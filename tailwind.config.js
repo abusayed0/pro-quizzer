@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       height:{
           "80vh":"80vh"
-      }
+      },
     },
   },
   plugins: [require("daisyui")],

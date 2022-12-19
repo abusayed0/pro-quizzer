@@ -5,7 +5,7 @@ import SingleTropic from '../single-tropic/SingleTropic';
 const Tropics = () => {
     const allTropics=useLoaderData().data;
     return (
-        <div className="my-20 md:w-10/12 md:mx-auto">
+        <div className="mt-20 mb-10 md:w-10/12 md:mx-auto">
 
             {/* top banner start */}
             <div className="relative">
