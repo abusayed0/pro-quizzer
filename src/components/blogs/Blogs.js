@@ -2,8 +2,8 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div className="md:w-10/12 md:mx-auto">
-            <div className="mt-20 grid grid-cols-1 gap-10">
+        <div className="my-20 md:w-10/12 md:mx-auto">
+            <div className="grid grid-cols-1 gap-10">
                 <div className="bg-zinc-300 shadow-xl p-7 rounded-md flex flex-col gap-3">
                     <h2 className="text-2xl">What is The purpose of react router ?</h2>
                     <p className="text-xl">
