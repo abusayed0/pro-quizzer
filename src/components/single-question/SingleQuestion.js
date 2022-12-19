@@ -12,25 +12,28 @@ const SingleQuestion = ({ questionData, index }) => {
     const { question, correctAnswer, options } = questionData;
     const handleCheck = selected => {
        
-        if(selected===correctAnswer){
-            setRight(selected)
-            setWrong("");
-            Swal.fire(
-                'Good job!',
-                'Your answer is right!',
-                'success'
-              )
-        }
-        else{
-            setWrong(selected)
-            setRight("");
-            Swal.fire({
-                icon: 'error',
-                title: 'Oops...',
-                text: 'Your answer is wrong!',
-              })
+        if(selected !== right && selected !== wrong){
+            if(selected===correctAnswer){
+                setRight(selected)
+                setWrong("");
+                Swal.fire(
+                    'Good job!',
+                    'Your answer is right!',
+                    'success'
+                  )
+            }
+            else{
+                setWrong(selected)
+                setRight("");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Your answer is wrong!',
+                  })
+            }
         }
     }
+
     const handleShowAnswer=()=>{
         Swal.fire(correctAnswer)
     }

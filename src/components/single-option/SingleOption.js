@@ -19,7 +19,7 @@ const SingleOption = ({ option, handleCheck, right, wrong }) => {
                     ||
                     (option === wrong && <FontAwesomeIcon icon={faXmark} className="text-4xl"></FontAwesomeIcon>)
                 }
-                <p className="text-xl break-words	">{option}</p>
+                <p className="text-xl" style={{"wordBreak":"break-word"}}>{option}</p>
             </div>
         </button>
 

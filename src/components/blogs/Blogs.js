@@ -21,7 +21,8 @@ const Blogs = () => {
                 </div>
                 <div className="bg-zinc-300 shadow-xl p-7 rounded-md flex flex-col gap-3">
                     <h2 className="text-2xl">What is the use of react useRef hooks ?</h2>
-                    <p className="text-xl">useRef is one of the many built-in hooks provided by React. It is useful for persisting mutable data between component renders. useRef returns only one value which is the actual data stored. When the reference value is changed, it is updated without the need to refresh or re-render.
+                    <p className="text-xl">useRef is one of the many built-in hooks provided by React. It is useful for persisting mutable data between component renders. useRef returns only one value which is the actual data stored. When the reference value is changed, it is updated without the need to refresh or re-render.useRef used to accessing DOM elements,tracking state changes.
+
                     </p>
                 </div>
 
